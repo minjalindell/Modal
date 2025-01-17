@@ -8,8 +8,7 @@ export default function App() {
     <View style={styles.container}>
       <Pressable
         style={styles.pressable}
-        onPress={() => setModalVisible(true)}
-      >
+        onPress={() => setModalVisible(true)}>
         <Text style={styles.pressableText}>Show modal message</Text>
       </Pressable>
 
@@ -17,7 +16,7 @@ export default function App() {
         animationType="slide"
         transparent={true}
         visible={modalVisible}
-        onRequestClose={() => setModalVisible(false)} // Android hardware back button
+        onRequestClose={() => setModalVisible(false)}
       >
         <View style={styles.modalOverlay}>
           <View style={styles.modalContent}>
