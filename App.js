@@ -23,8 +23,7 @@ export default function App() {
             <Text style={styles.modalText}>This is modal...</Text>
             <Pressable
               style={styles.closeButton}
-              onPress={() => setModalVisible(false)}
-            >
+              onPress={() => setModalVisible(false)}>
               <Text style={styles.closeButtonText}>Close</Text>
             </Pressable>
           </View>
